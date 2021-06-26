@@ -43,8 +43,26 @@ h5{
     max-width: 1140px;
     margin: 0 auto;
 }
-
-
+.d-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+img{
+    width: 100%;
+}
+.button{
+    padding: 10px 25px;
+    width: auto;
+    background: #262626;
+    color: #fff;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+.button:hover{
+    background: deepskyblue;
+    cursor: pointer;
+}
 
 /* header */
 header{
@@ -122,7 +140,155 @@ nav ul li a.active{
     color: deepskyblue;
 }
 
+/* MAIN */
+/* section HOME */
+main{
+    padding-top: 82px;
+}
+.home .container{
+    min-height: calc(100vh - 82px);
+    align-items: center;
+    height: 100%;
+}
+.home .col-left h1{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+.home .col-left h3{
+    font-weight: 900;
+    color: deepskyblue;
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+.home .col-left p{
+    max-width: 400px;
+    margin-bottom: 50px;
+    line-height: 160%;
+}
+.home .col-left p a{
+    color: #262626;
+    transition: .4s all ease-in-out;
+    font-style: italic;
+}
+.home .col-left p a:hover{
+    color: deepskyblue;
+}
+/* section ABOUTME */
+.aboutme{
+    padding-top: 100px;
+    min-height: 60vh;
+    height: 60vh;
+}
+.aboutme h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.aboutme .container{
+    align-items: center;
+    height: 100%;
+}
+.aboutme .col-left{
+    text-align: center;
+}
+.aboutme .col-left img{
+    width: 50%;
+    margin-bottom: 15px;
+}
+.aboutme .col-left p{
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.aboutme .col-right h3{
+    font-weight: 900;
+    color: deepskyblue;
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+.aboutme .col-right h5{
+    font-weight: 900;
+    margin-bottom: 25px;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
+}
+.aboutme .col-right ul{
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    grid-gap: 15px;
+}
+.aboutme .col-right ul li{
+    font-size: 20px;
+    color: deepskyblue;
+    transition: all .4s ease-in-out;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;";
+}
+.aboutme .col-right ul li:hover{
+    color: deepskyblue;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1200px){
+    /* section HOME */
+    .home .col-left h1{
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .home .col-left h3{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 1023px){
+    /* section HOME */
+    .home .container{
+        min-height: auto;
+    }
+    .home .col-left h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .home .col-left h3{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .home .col-left p{
+        font-size: 14px;
+    }
+
+    /* Section ABOUT ME */
+    .aboutme h2{
+        font-size: 45px;
+    }
+
+    .aboutme .container p{
+        font-size: 14px;
+    }
+}
+@media (min-width: 961px){
+    /* HEADER */
+    nav ul{
+        display: block !important;
+    }
+}
 @media (max-width: 960px){
+    /* HEADER */
     .burger{
         display: block;
     }
@@ -144,16 +310,55 @@ nav ul li a.active{
     }
     nav ul li:hover a,
     nav ul li .active{
-        border: 1px solid deepskyblue;
-        padding: 5px;
-    }
-    nav ul li a{
         color: deepskyblue;
     }
+    nav ul li a{
+        color: #fff;
+    }
+}
 
+@media(max-width: 768px){
+    /* GENERAL */
+    .d-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* section HOME */
+    .home .container{
+        text-align: center;
+    }
+    .home .col-right{
+        display: none;
+    }
+    .home .container{
+        min-height: calc(100vh - 82px);
+        height: 100%;
+        align-items: center;
+    }
+    .home .col-left h3{
+        margin-bottom: 10px;
+    }
+    .home .col-left p{
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    /* section aboutME */
+    .aboutme {
+        padding-top: 0px;
+    }
+    .aboutme .col-right h5{
+        margin-top: 20px;
+    }
+    .aboutme .col-right ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
-main{
-    height: 3000px;
+
+
+
+
+.pusto{
+    height: 2000px;
 }
