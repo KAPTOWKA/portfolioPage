@@ -423,7 +423,7 @@ main{
     width: 100%;
     text-align: center;
 }
-address{
+.contact-content .col-left{
     font-style: normal;
 }
 .contact .container h2{
@@ -459,7 +459,7 @@ address{
     margin-bottom: 0;
 }
 
-address a{
+.contact-content .col-left a{
     color: #262626;
 }
 .contact p i{
@@ -486,6 +486,7 @@ address a{
     transition: all .4s ease-in-out;
     width: 40%;
     margin-left: 30%;
+    border: 0;
 }
 .contact input[type="submit"]:hover{
     background: deepskyblue;
@@ -699,7 +700,7 @@ footer ul li:hover{
         padding-top: 40px;
     }
     /* section Contact */
-    address{
+    .contact-content .col-left{
         text-align: center;
         order: 5;
     }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,7 +43,7 @@
                 <div class="col-left">
                     <h3>Я Яськуть Павел</h3>
                     <h1>Front-End<br>Developer</h1>
-                    <p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portfolio">&ltsection id="portfolio"&gt</a>.</p>
+                    <p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portfolio">&lt;section id="portfolio"/&gt;</a>.</p>
                     <a class="button" href="#contact">Связаться со мной</a>
                 </div>
                 <div class="col-right">
@@ -58,7 +58,7 @@
                 <div class="col-left">
                     <img src="/images/rofl2.png" alt="its not me">
                     <p>Привет, я Паша! Я Front-End разработчик из Минска, специализируюсь на создании красивых, оптимизированных сайтов и веб-приложений.</p>
-                    <a href="#portolio" class="button">Перейти к портфолио</a>
+                    <a href="#portfolio" class="button">Перейти к портфолио</a>
                 </div>
                 <div class="col-right">
                     <h5>Технологии, которые я использую:</h5>
@@ -89,7 +89,7 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span>< </span>PiarRocket<span> /></span></h4>
+                        <h4><span>&lt; </span>PiarRocket<span> /&gt;</span></h4>
                     </div>
                     <div class="item">
                         <div class="container-image">
@@ -101,7 +101,7 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span>< </span>Landing page<span> /></span></h4>
+                        <h4><span>&lt; </span>Landing page<span> /&gt;</span></h4>
                     </div>
                     <div class="item">
                         <div class="container-image">
@@ -113,7 +113,7 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span>< </span>Web-store (ReactJS)<span> /></span></h4>
+                        <h4><span>&lt; </span>Web-store (ReactJS)<span> /&gt;</span></h4>
                     </div>
                 </div>
             </div>
@@ -160,17 +160,19 @@
                 <h2>Мои Контакты</h2>
                 <p>Для связи со мной вы можете использовать форму или связаться со мной через социальные сети внизу сайта</p>
                 <div class="contact-content d-grid">
-                    <address class="col-left">
+                    <div class="col-left">
                         <h3>Контактная информация</h3>
-                        <p><i class="fa fa-home"></i>г.Минск, Ул. Голубева 19</p>
-                        <p><i class="fa fa-envelope"></i><a href="mailto:pavel.yaskuts@gmail.com">pavel.yaskuts@gmail.com</a></p>
-                        <p><i class="fa fa-phone"></i><a href="tel:+375296039733">+375(29) 603-97-33</a></p>
-                    </address>
+                        <address>
+                            <p><i class="fa fa-home"></i>г.Минск, Ул. Голубева 19</p>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:pavel.yaskuts@gmail.com">pavel.yaskuts@gmail.com</a></p>
+                            <p><i class="fa fa-phone"></i><a href="tel:+375296039733">+375(29) 603-97-33</a></p>
+                        </address>
+                    </div>
                     <div class="col-right">
-                        <form action="">
+                        <form action="URL">
                             <input type="text" required placeholder="Ваше имя ..">
                             <input type="tel" required placeholder="Ваш телефон ..">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+                            <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
                             <input type="submit">
                         </form>
                     </div>
@@ -189,6 +191,8 @@
             </ul>
         </div>
     </footer>
+
+
 
 
 
