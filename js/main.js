@@ -1,3 +1,4 @@
+// change navigation div when scrolling
 $(document).ready(function () {
     $(window).bind("scroll", function() {
         var navHeight = $("header").height();
@@ -12,6 +13,7 @@ $(document).ready(function () {
     });
 });
 
+// show navigation bar
 $(".burger").on("click", function (event) {
     $("nav ul").slideToggle("200");
 });

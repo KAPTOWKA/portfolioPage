@@ -63,7 +63,7 @@ img{
     cursor: pointer;
 }
 
-/* header */
+/* header _________________________________________________________________________________________*/
 header{
     height: 82px;
     position: fixed;
@@ -141,7 +141,7 @@ nav ul li a.active{
 }
 
 /* MAIN */
-/* section HOME */
+/* section HOME _________________________________________________________________________________________*/
 main{
     padding-top: 82px;
 }
@@ -177,7 +177,7 @@ main{
 }
 
 
-/* section ABOUTME */
+/* section ABOUTME _________________________________________________________________________________________*/
 .aboutme{
     padding-top: 100px;
     height: auto;
@@ -225,6 +225,7 @@ main{
     padding: 0;
     text-align: center;
     grid-gap: 15px;
+    font-weight: 700;
 }
 .aboutme .col-right ul li{
     font-size: 20px;
@@ -235,7 +236,9 @@ main{
 .aboutme .col-right ul li:hover{
     color: deepskyblue;
 }
-/* section portfolio */
+
+
+/* section portfolio _________________________________________________________________________________________*/
 .portfolio{
     padding-top: 100px;
     height: auto;
@@ -261,7 +264,7 @@ main{
     grid-gap: 20px;
 }
 .portfolio-items .item{
-    transition: transform 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     overflow: hidden;
 }
 .portfolio-items .item:hover{
@@ -334,6 +337,200 @@ main{
 }
 
 
+/* section services _________________________________________________________________________________________*/
+.services{
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.services .container h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.services .container p{
+    max-width: 60%;
+    margin: auto;
+}
+.service-items{
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+.service-items .item{
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    background-color: #fff;
+    transition: all .4s ease-in-out;
+}
+.service-items .item:hover{
+    transform: scale(1.05);
+}
+.service-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #262626;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease-in-out;
+}
+.service-items .item:hover .service-icon{
+    background-color: #fff;
+}
+.service-icon i{
+    font-size: 35px;
+    color: deepskyblue;
+    padding: 0;
+}
+.service-content{
+    padding: 25px 30px;
+}
+.service-items .item .service-content p{
+    margin: 16px 0 25px;
+    max-width: 100%;
+    width: 100%;
+    transition: all .4s ease-in-out;
+}
+.service-content h4{
+    font-size: 28px;
+    color: #262626;
+    margin-bottom: 15px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+.service-items .item:hover{
+    background-color: #262626;
+}
+.service-items .item:hover h4,
+.service-items .item:hover p{
+    color: #fff;
+}
+
+
+/* section contacts _________________________________________________________________________________________*/
+.contact{
+    padding-top: 100px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+address{
+    font-style: normal;
+}
+.contact .container h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+.contact .container p{
+    max-width: 60%;
+    margin: auto;
+}
+.contact-content{
+    margin-top: 60px;
+    width: 100%;
+    text-align: left;
+}
+.contact h3{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 23px;
+    color: deepskyblue;
+}
+.contact .container .contact-content p{
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #262626;
+}
+.contact .container .contact-content p:last-child{
+    margin-bottom: 0;
+}
+
+address a{
+    color: #262626;
+}
+.contact p i{
+    margin-right: 20px;
+    font-size: 22px;
+}
+.contact input,
+.contact textarea{
+    border-radius: 5px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact input[type="submit"]{
+    display: inline-block;
+    background: #262626;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    width: 40%;
+    margin-left: 30%;
+}
+.contact input[type="submit"]:hover{
+    background: deepskyblue;
+}
+
+
+
+/* FOOTER _________________________________________________________________________________________*/
+footer{
+    margin-top: 60px;
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+    font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+    transition: all .4s ease-in-out;
+}
+footer ul li{
+    flex: 1 0 auto;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    margin: 0 10px;
+}
+footer i{
+    margin-right: 5px;
+}
+footer ul li:hover{
+    cursor: pointer;
+    color: deepskyblue;
+}
+
+
 
 
 @media(max-width: 1200px){
@@ -369,7 +566,6 @@ main{
     .aboutme h2{
         font-size: 45px;
     }
-
     .aboutme .container p{
         font-size: 14px;
     }
@@ -385,6 +581,30 @@ main{
     .portfolio-items .item h4{
         font-size: 20px;
     }
+    /* section services */
+    .services .container h2{
+        font-size: 45px;
+    }
+    .services .container p{
+        font-size: 14px;
+        max-width: 90%;
+        margin: auto;
+    }
+    .service-items .item h4{
+        font-size: 20px;
+    }
+    /* section contact */
+    .contact .container h2{
+        font-size: 45px;
+    }
+    .contact-content{
+        margin-top: 30px;
+    }
+    .contact .container p{
+        font-size: 14px;
+        max-width: 90%;
+    }
+
 }
 @media (min-width: 961px){
     /* HEADER */
@@ -474,18 +694,45 @@ main{
     .portfolio-items .item h4{
         margin-bottom: 10px;
     }
+    /* section Services */
+    .services{
+        padding-top: 40px;
+    }
+    /* section Contact */
+    address{
+        text-align: center;
+        order: 5;
+    }
+    .contact h3{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    /* footer */
+    footer ul li{
+        font-size: 14px;
+        margin: 0 5px;
+    }
 }
-
+@media (max-width: 550px){
+    footer ul{
+        flex-direction: column;
+    }
+    footer{
+        padding: 15px 0;
+    }
+    footer ul li{
+        margin: 5px 0;
+    }
+    footer ul li:last-child{
+        margin-bottom: 0;
+    }
+}
 @media (max-width: 450px){
+    .contact input[type="submit"]{
+        width: 80%;
+        margin-left: 10%;
+    }
     .aboutme .col-right ul{
         grid-template-columns: 1fr;
     }
-}
-
-
-
-
-
-.pusto{
-    height: 2000px;
 }

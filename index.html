@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
-
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/a9c1882cb6.js" crossorigin="anonymous"></script>
     <!-- myStyles -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -42,7 +43,7 @@
                 <div class="col-left">
                     <h3>Я Яськуть Павел</h3>
                     <h1>Front-End<br>Developer</h1>
-                    <p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portolio">&ltsection id="portfolio"&gt</a>.</p>
+                    <p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portfolio">&ltsection id="portfolio"&gt</a>.</p>
                     <a class="button" href="#contact">Связаться со мной</a>
                 </div>
                 <div class="col-right">
@@ -88,7 +89,7 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span><</span>PiarRocket<span>/></span></h4>
+                        <h4><span>< </span>PiarRocket<span> /></span></h4>
                     </div>
                     <div class="item">
                         <div class="container-image">
@@ -100,7 +101,7 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span><</span>Simple Landing page<span>/></span></h4>
+                        <h4><span>< </span>Landing page<span> /></span></h4>
                     </div>
                     <div class="item">
                         <div class="container-image">
@@ -112,29 +113,81 @@
                                 </div>
                             </a>
                         </div>
-                        <h4><span><</span>Web-store (ReactJS)<span>/></span></h4>
-                    </div>
-                    <div class="item">
-                        <div class="container-image">
-                            <a>
-                                <img src="images/port1.jpg" alt="PiarRocket site">
-                                <div class="decription">
-                                    <p>Сайт выполнен под заказ для рекламного агенства "Piar Rocket"</p>
-                                    <p>Нажмите, чтобы посмотреть работу</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h4>PiarRocket</h4>
+                        <h4><span>< </span>Web-store (ReactJS)<span> /></span></h4>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="pusto">
 
-        </div>
+        <section class="services" id="services">
+            <div class="container">
+                <h2>Мои услуги</h2>
+                <p>Дайте мне любое задание, google и время - и я решу эту задачу, насколько сложной бы она не была.</p>
+                <div class="service-items">
+                    <div class="item">
+                        <div class="service-icon">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Веб-разработка</h4>
+                            <p>Разработаю Landing Page (одностраничный сайт), интернет-магазин, веб-приложение. Есть возможность реализовать сайт используя Wordpress, Tilda и т.д. loremru50</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-icon">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Веб-разработка</h4>
+                            <p>Разработаю Landing Page (одностраничный сайт), интернет-магазин, веб-приложение. Есть возможность реализовать сайт используя Wordpress, Tilda и т.д.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="service-icon">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Веб-разработка</h4>
+                            <p>Разработаю Landing Page (одностраничный сайт), интернет-магазин, веб-приложение. Есть возможность реализовать сайт используя Wordpress, Tilda и т.д.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Мои Контакты</h2>
+                <p>Для связи со мной вы можете использовать форму или связаться со мной через социальные сети внизу сайта</p>
+                <div class="contact-content d-grid">
+                    <address class="col-left">
+                        <h3>Контактная информация</h3>
+                        <p><i class="fa fa-home"></i>г.Минск, Ул. Голубева 19</p>
+                        <p><i class="fa fa-envelope"></i><a href="mailto:pavel.yaskuts@gmail.com">pavel.yaskuts@gmail.com</a></p>
+                        <p><i class="fa fa-phone"></i><a href="tel:+375296039733">+375(29) 603-97-33</a></p>
+                    </address>
+                    <div class="col-right">
+                        <form action="">
+                            <input type="text" required placeholder="Ваше имя ..">
+                            <input type="tel" required placeholder="Ваш телефон ..">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="container">
+            <ul>
+                <li><i class="fab fa-github"></i>GitHub</li>
+                <li><i class="fab fa-free-code-camp"></i>FreeCodeCamp</li>
+                <li><i class="fab fa-vk"></i>VK</li>
+                <li><i class="fab fa-instagram"></i>Instagram</li>
+                <li><i class="fab fa-telegram"></i>Telegram</li>
+            </ul>
+        </div>
     </footer>
 
 
