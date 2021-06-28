@@ -289,6 +289,7 @@ main{
 .portfolio-items .item .container-image{
     position: relative;
     width: 100%;
+    max-height: 332.5px;
 }
 .portfolio-items .item .container-image a{
     z-index: 3;
@@ -526,12 +527,17 @@ footer ul li{
 footer i{
     margin-right: 5px;
 }
-footer ul li:hover{
+footer ul li:hover a{
     cursor: pointer;
     color: deepskyblue;
 }
-
-
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:visited{
+    color: #fff;
+}
 
 
 @media(max-width: 1200px){
