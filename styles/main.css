@@ -63,6 +63,8 @@ img{
     cursor: pointer;
 }
 
+
+
 /* header _________________________________________________________________________________________*/
 header{
     height: 82px;
@@ -139,6 +141,8 @@ nav ul li a:hover,
 nav ul li a.active{
     color: deepskyblue;
 }
+
+
 
 /* MAIN */
 /* section HOME _________________________________________________________________________________________*/
@@ -673,9 +677,6 @@ footer a:visited{
         margin-bottom: 30px;
     }
     /* section aboutME */
-    .aboutme {
-        padding-top: 0px;
-    }
     .aboutme .col-right h5{
         margin-top: 20px;
     }
@@ -687,9 +688,6 @@ footer a:visited{
         margin-left: auto;
     }
     /* section portfolio */
-    .portfolio{
-        padding-top: 40px;
-    }
     .portfolio-items{
         margin-top: 20px;
         display: grid;
@@ -700,9 +698,6 @@ footer a:visited{
         margin-bottom: 10px;
     }
     /* section Services */
-    .services{
-        padding-top: 40px;
-    }
     /* section Contact */
     .contact-content .col-left{
         text-align: center;

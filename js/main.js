@@ -34,12 +34,12 @@ const position = $(this).scrollTop();
 
 section.each(function () {
     const top = $(this).offset().top - navHeight,
-        bottom = top + $(this).outerHeight();
+        bottom = top + $(this).outerHeight()-100;
 
 
     if (position >= top && position <= bottom) {
         nav.find('a').removeClass('active');
-        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+        nav.find('a[href="#' + $(this).attr('class') + '"]').addClass('active');
     }
     });
 });
