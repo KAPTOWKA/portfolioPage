@@ -25,8 +25,6 @@ const section = $('section'),
     nav = $('nav ul');
 let navHeight = nav.outerHeight(); //
 
-
-
 window.addEventListener('orientationchange', function () {
 navHeight = nav.outerHeight();
 }, false);

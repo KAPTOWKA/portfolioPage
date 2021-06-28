@@ -142,13 +142,11 @@ nav ul li a.active{
 
 /* MAIN */
 /* section HOME _________________________________________________________________________________________*/
-main{
-    padding-top: 82px;
-}
 .home .container{
     min-height: calc(100vh - 82px);
     align-items: center;
     height: 100%;
+    padding-top: 82px;
 }
 .home .col-left h1{
     font-size: 60px;
