@@ -17,3 +17,31 @@ $(document).ready(function () {
 $(".burger").on("click", function (event) {
     $("nav ul").slideToggle("200");
 });
+
+
+
+// highlighting the active view of the menu when scrolling
+const section = $('section'),
+    nav = $('nav ul');
+let navHeight = nav.outerHeight(); //
+
+
+
+window.addEventListener('orientationchange', function () {
+navHeight = nav.outerHeight();
+}, false);
+
+$(window).on('scroll', function () {
+const position = $(this).scrollTop();
+
+section.each(function () {
+    const top = $(this).offset().top - navHeight,
+        bottom = top + $(this).outerHeight();
+
+
+    if (position >= top && position <= bottom) {
+        nav.find('a').removeClass('active');
+        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+    }
+    });
+});
