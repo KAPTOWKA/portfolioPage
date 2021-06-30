@@ -168,10 +168,10 @@
                         </address>
                     </div>
                     <div class="col-right">
-                        <form action="URL">
-                            <input type="text" required placeholder="Ваше имя ..">
-                            <input type="tel" required placeholder="Ваш телефон ..">
-                            <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+                        <form id="callbackForm" onsubmit="callhandlerForm()" method="POST">
+                            <input type="text" name="user_name" required placeholder="Ваше имя ..">
+                            <input type="tel" name="user_phone" required placeholder="Ваш телефон ..">
+                            <textarea name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
                             <input type="submit">
                         </form>
                     </div>
@@ -201,5 +201,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
+    <script src="js/formHandler.js"></script>
 </body>
 </html>
