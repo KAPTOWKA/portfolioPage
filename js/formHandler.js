@@ -1,16 +1,18 @@
 
-function callhandlerForm() {
-	var msg   = $('#callbackForm').serialize();
-        $.ajax({
-        type: 'POST',
-        url: 'form.php',
-        data: msg,
-        success: function(data) {
-            $('#callbackForm').remove();
-            alert(data);
+$("#callbackForm").on('submit', function (e) {
+
+    e.preventDefault();
+
+    $.ajax({
+      type: "POST",
+      url: "form.php",
+      data: $("#callbackForm").serialize(),
+        success: function () {
+            alert("Заявка успешно отправлена");
+            $('#callbackForm')[0].reset();
         },
-        error:  function(xhr, str){
-	    alert('Возникла ошибка: ' + xhr.responseCode);
-        }
+        error: function () {
+            alert("Ошибка отправки формы, пожалуйста, попробуйте еще раз");
+      }
     });
-}
+});

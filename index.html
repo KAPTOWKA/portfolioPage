@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <!-- Upload google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,10 +169,10 @@
                         </address>
                     </div>
                     <div class="col-right">
-                        <form id="callbackForm" onsubmit="callhandlerForm()" method="POST">
-                            <input type="text" name="user_name" required placeholder="Ваше имя ..">
-                            <input type="tel" name="user_phone" required placeholder="Ваш телефон ..">
-                            <textarea name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+                        <form id="callbackForm">
+                            <input type="text" name="user_name" min="1" max="30" required placeholder="Ваше имя ..">
+                            <input type="tel" name="user_phone" title="Например: +37529xxxxxxx" required  placeholder="Ваш телефон .." pattern="^(\+375|80)(29|25|44|33|17|65)(\d{3})(\d{2})(\d{2})$">
+                            <textarea min="1" max="100" name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
                             <input type="submit">
                         </form>
                     </div>
