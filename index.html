@@ -170,9 +170,9 @@
                     </div>
                     <div class="col-right">
                         <form id="callbackForm">
-                            <input type="text" name="user_name" min="1" max="30" required placeholder="Ваше имя ..">
+                            <input type="text" name="user_name" maxlength="30" required placeholder="Ваше имя ..">
                             <input type="tel" name="user_phone" title="Например: +37529xxxxxxx" required  placeholder="Ваш телефон .." pattern="^(\+375|80)(29|25|44|33|17|65)(\d{3})(\d{2})(\d{2})$">
-                            <textarea min="1" max="100" name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+                            <textarea maxlength="100" name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
                             <input type="submit">
                         </form>
                     </div>
