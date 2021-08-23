@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
     <!-- fontAwesome -->
-    <script src="https://kit.fontawesome.com/a9c1882cb6.js" crossorigin="anonymous"></script>
     <!-- myStyles -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
@@ -47,7 +46,7 @@
                     <a class="button" href="#contact">Связаться со мной</a>
                 </div>
                 <div class="col-right">
-                    <img src="/images/mySelf.png" alt="It's my photo">
+                    <img src="/images/mySelf.webp" alt="It's my photo">
                 </div>
             </div>
         </section>
@@ -56,7 +55,15 @@
             <h2>Обо мне</h2>
             <div class="container d-grid">
                 <div class="col-left">
-                    <img src="/images/rofl2.png" alt="its not me">
+					<picture>
+						<img
+						srcset="/images/rofl,w_605.webp 605w,
+						/images/rofl,w_200.webp 200w"
+						sizes="(max-width: 405px) 100px,
+						605px"
+						src="/images/rofl,w_605.webp"
+						alt="its not me">
+					</picture>
                     <p>Привет, я Паша! Я Front-End разработчик из Минска, специализируюсь на создании красивых, оптимизированных сайтов и веб-приложений.</p>
                     <a href="#portfolio" class="button">Перейти к портфолио</a>
                 </div>
@@ -82,7 +89,7 @@
                     <div class="item">
                         <div class="container-image">
                             <a href="https://piarrockettest.000webhostapp.com/" target="_blank">
-                                <img src="images/piarRocket.png" alt="PiarRocket site">
+                                <img src="images/piarRocket.webp" alt="PiarRocket site">
                                 <div class="decription">
                                     <p>Сайт выполнен под заказ для рекламного агенства "Piar Rocket"</p>
                                     <p>Нажмите, чтобы посмотреть работу</p>
@@ -94,7 +101,7 @@
                     <div class="item">
                         <div class="container-image">
                             <a href="https://piarrockettest.000webhostapp.com/SimpleLandingPage/exampleLanding.html" target="_blank">
-                                <img src="images/simpleLanding.png" alt="Simple Landing page">
+                                <img src="images/simpleLanding.webp" alt="Simple Landing page">
                                 <div class="decription">
                                     <p>Пример базового сайта для вашего бизнеса</p>
                                     <p>Нажмите, чтобы посмотреть работу</p>
@@ -106,7 +113,7 @@
                     <div class="item">
                         <div class="container-image">
                             <a href="https://github.com/yaskutsWeb/steganography-c-avi" target="_blank">
-                                <img src="images/aviHide.png" alt="AviHide - Cryptographic application">
+                                <img src="images/aviHide.webp" alt="AviHide - Cryptographic application">
                                 <div class="decription">
                                     <p>Десктоп приложение шифрования данных в видео</p>
                                     <p>Нажмите, чтобы посмотреть работу</p>
@@ -198,7 +205,7 @@
 
 
 
-
+	<script src="https://kit.fontawesome.com/a9c1882cb6.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/main.js"></script>
