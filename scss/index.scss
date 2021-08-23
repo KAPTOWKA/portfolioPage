@@ -4,7 +4,9 @@ $text-main-color: deepskyblue;
 $text-secondary-color: #fff;
 $text-third-color: #262626;
 
-
+*{
+	scroll-behavior: smooth;
+}
 
 html {
 	font-size: 100%;
