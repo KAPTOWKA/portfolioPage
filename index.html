@@ -1,203 +1,218 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-    <!-- Upload google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
-    <!-- fontAwesome -->
-    <!-- myStyles -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>kamaz.v8</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<!-- Upload google font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700;900&display=swap|Comfortaa:wght@500&display=swap" rel="stylesheet">
+	<!-- fontAwesome -->
+	<!-- myStyles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>kamaz.v8</title>
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">yaWeb</a>
-                <div class="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul>
-                    <li><a href="#home" class="active">Главная</a></li>
-                    <li><a href="#aboutme">Обо мне</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#contact">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section id="home" class="home">
-            <div class="container d-grid">
-                <div class="col-left">
-                    <h3>Я Яськуть Павел</h3>
-                    <h1>Front-End<br>Developer</h1>
-                    <p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portfolio">&lt;section id="portfolio"/&gt;</a>.</p>
-                    <a class="button" href="#contact">Связаться со мной</a>
-                </div>
-                <div class="col-right">
-                    <img src="/images/mySelf.webp" alt="It's my photo">
-                </div>
-            </div>
-        </section>
+	<header>
+		<div class="container">
+			<nav>
+				<a href="#" class="logo">yaWeb</a>
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul>
+					<li><a href="#home" class="active">Главная</a></li>
+					<li><a href="#aboutme">Обо мне</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#services">Услуги</a></li>
+					<li><a href="#contact">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section id="home" class="home">
+			<div class="container d-grid">
+				<div class="col-left">
+					<h3>Я Яськуть Павел</h3>
+					<h1>Front-End<br>Developer</h1>
+					<p>Здесь должен быть текст, который описывает меня как разработчика, но я считаю что лучшее описание
+						разработчика - это его портфолио, поэтому добро пожаловать на <a href="#portfolio">&lt;section
+							id="portfolio"/&gt;</a>.</p>
+					<a class="button" href="#contact">Связаться со мной</a>
+				</div>
+				<div class="col-right">
+					<img loading="lazy" src="/images/mySelf.webp" alt="It's my photo">
+				</div>
+			</div>
+		</section>
 
-        <section id="aboutme" class="aboutme">
-            <h2>Обо мне</h2>
-            <div class="container d-grid">
-                <div class="col-left">
+		<section id="aboutme" class="aboutme">
+			<h2>Обо мне</h2>
+			<div class="container d-grid">
+				<div class="col-left">
 					<picture>
-						<img
-						srcset="/images/rofl,w_605.webp 605w,
-						/images/rofl,w_200.webp 200w"
-						sizes="(max-width: 405px) 100px,
-						605px"
-						src="/images/rofl,w_605.webp"
-						alt="its not me">
+						<img srcset="/images/rofl,w_605.webp 605w,
+						/images/rofl,w_200.webp 200w" sizes="(max-width: 405px) 100px,
+						605px" src="/images/rofl,w_605.webp" alt="its not me">
 					</picture>
-                    <p>Привет, я Паша! Я Front-End разработчик из Минска, специализируюсь на создании красивых, оптимизированных сайтов и веб-приложений.</p>
-                    <a href="#portfolio" class="button">Перейти к портфолио</a>
-                </div>
-                <div class="col-right">
-                    <h5>Технологии, которые я использую:</h5>
-                    <ul class="d-grid">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>JQuery</li>
-                        <li>git</li>
-                        <li>ReactJS</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+					<p>Привет, я Паша! Я Front-End разработчик из Минска, специализируюсь на создании красивых,
+						оптимизированных сайтов и веб-приложений.</p>
+					<a href="#portfolio" class="button">Перейти к портфолио</a>
+				</div>
+				<div class="col-right">
+					<h5>Технологии, которые я использую:</h5>
+					<ul class="d-grid">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+						<li>JQuery</li>
+						<li>git</li>
+						<li>ReactJS</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h2>Мои работы</h2>
-                <p>Для подробного ознакомления с работой, наведите на нее мышкой или нажмите на работу, если вы хотите посмотреть демо в новом окне.</p>
-                <div class="portfolio-items">
-                    <div class="item">
-                        <div class="container-image">
-                            <a href="https://piarrockettest.000webhostapp.com/" target="_blank">
-                                <img src="images/piarRocket.webp" alt="PiarRocket site">
-                                <div class="decription">
-                                    <p>Сайт выполнен под заказ для рекламного агенства "Piar Rocket"</p>
-                                    <p>Нажмите, чтобы посмотреть работу</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h4><span>&lt; </span>PiarRocket<span> /&gt;</span></h4>
-                    </div>
-                    <div class="item">
-                        <div class="container-image">
-                            <a href="https://piarrockettest.000webhostapp.com/SimpleLandingPage/exampleLanding.html" target="_blank">
-                                <img src="images/simpleLanding.webp" alt="Simple Landing page">
-                                <div class="decription">
-                                    <p>Пример базового сайта для вашего бизнеса</p>
-                                    <p>Нажмите, чтобы посмотреть работу</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h4><span>&lt; </span>Landing page<span> /&gt;</span></h4>
-                    </div>
-                    <div class="item">
-                        <div class="container-image">
-                            <a href="https://github.com/yaskutsWeb/steganography-c-avi" target="_blank">
-                                <img src="images/aviHide.webp" alt="AviHide - Cryptographic application">
-                                <div class="decription">
-                                    <p>Десктоп приложение шифрования данных в видео</p>
-                                    <p>Нажмите, чтобы посмотреть работу</p>
-                                </div>
-                            </a>
-                        </div>
-                        <h4><span>&lt; </span>AviHide<span> /&gt;</span></h4>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2>Мои работы</h2>
+				<p>Для подробного ознакомления с работой, наведите на нее мышкой или нажмите на работу, если вы хотите
+					посмотреть демо в новом окне.</p>
+				<div class="portfolio-items">
+					<div class="item">
+						<div class="container-image">
+							<a href="https://piarrockettest.000webhostapp.com/" target="_blank">
+								<img src="images/piarRocket.webp" alt="PiarRocket site">
+								<div class="decription">
+									<p>Сайт выполнен под заказ для рекламного агенства "Piar Rocket"</p>
+									<p>Нажмите, чтобы посмотреть работу</p>
+								</div>
+							</a>
+						</div>
+						<h4><span>&lt; </span>PiarRocket<span> /&gt;</span></h4>
+					</div>
+					<div class="item">
+						<div class="container-image">
+							<a href="https://piarrockettest.000webhostapp.com/SimpleLandingPage/exampleLanding.html"
+								target="_blank">
+								<img src="images/simpleLandingPage.webp" alt="Simple Landing page">
+								<div class="decription">
+									<p>Пример базового сайта для вашего бизнеса</p>
+									<p>Нажмите, чтобы посмотреть работу</p>
+								</div>
+							</a>
+						</div>
+						<h4><span>&lt; </span>Landing page<span> /&gt;</span></h4>
+					</div>
+					<div class="item">
+						<div class="container-image">
+							<a href="https://github.com/yaskutsWeb/steganography-c-avi" target="_blank">
+								<img src="images/aviHide.webp" alt="AviHide - Cryptographic application">
+								<div class="decription">
+									<p>Десктоп приложение шифрования данных в видео</p>
+									<p>Нажмите, чтобы посмотреть работу</p>
+								</div>
+							</a>
+						</div>
+						<h4><span>&lt; </span>AviHide<span> /&gt;</span></h4>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <section class="services" id="services">
-            <div class="container">
-                <h2>Мои услуги</h2>
-                <p>Дайте мне любое задание, google и время - и я решу эту задачу, насколько сложной бы она не была.</p>
-                <div class="service-items">
-                    <div class="item">
-                        <div class="service-icon">
-                            <i class="fa fa-picture-o"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Создание сайтов</h4>
-                            <p>Создание сайтов под ключ по самым доступным ценам на рынке. Мои сайты адаптивные под все виды мобильных устройств и поисковые системы. Работа с всевозможными CMS, например Wordpress или Tilda</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="service-icon">
-                            <i class="fa fa-picture-o"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Доработка сайтов</h4>
-                            <p>Могу расширить функционал вашего проекта, добавить в него новые модули или модифицировать имеющиеся. Работаю над задачами любого уровня сложности, берусь как за программную составляющую, так и за доработку в плане дизайна, UI и т. п.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="service-icon">
-                            <i class="fa fa-picture-o"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Техподдержка</h4>
-                            <p>Исправление ошибок, развитие и регулярное обновление веб-ресурса. Ваш сайт будет развиваться и расти, благодаря чему интерес к нему со стороны пользователей не угаснет.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="services" id="services">
+			<div class="container">
+				<h2>Мои услуги</h2>
+				<p>Дайте мне любое задание, google и время - и я решу эту задачу, насколько сложной бы она не была.</p>
+				<div class="service-items">
+					<div class="item">
+						<div class="service-icon">
+							<i class="fa fa-picture-o"></i>
+						</div>
+						<div class="service-content">
+							<h4>Создание сайтов</h4>
+							<p>Создание сайтов под ключ по самым доступным ценам на рынке. Мои сайты адаптивные под все
+								виды мобильных устройств и поисковые системы. Работа с всевозможными CMS, например
+								Wordpress или Tilda</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="service-icon">
+							<i class="fa fa-picture-o"></i>
+						</div>
+						<div class="service-content">
+							<h4>Доработка сайтов</h4>
+							<p>Могу расширить функционал вашего проекта, добавить в него новые модули или модифицировать
+								имеющиеся. Работаю над задачами любого уровня сложности, берусь как за программную
+								составляющую, так и за доработку в плане дизайна, UI и т. п.</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="service-icon">
+							<i class="fa fa-picture-o"></i>
+						</div>
+						<div class="service-content">
+							<h4>Техподдержка</h4>
+							<p>Исправление ошибок, развитие и регулярное обновление веб-ресурса. Ваш сайт будет
+								развиваться и расти, благодаря чему интерес к нему со стороны пользователей не угаснет.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2>Мои Контакты</h2>
-                <p>Для связи со мной вы можете использовать форму или связаться со мной через социальные сети внизу сайта</p>
-                <div class="contact-content d-grid">
-                    <div class="col-left">
-                        <h3>Контактная информация</h3>
-                        <address>
-                            <p><i class="fa fa-home"></i>г.Минск, Ул. Голубева 19</p>
-                            <p><i class="fa fa-envelope"></i><a href="mailto:pavel.yaskuts@gmail.com">pavel.yaskuts@gmail.com</a></p>
-                            <p><i class="fa fa-phone"></i><a href="tel:+375296039733">+375(29) 603-97-33</a></p>
-                        </address>
-                    </div>
-                    <div class="col-right">
-                        <form id="callbackForm">
-                            <input type="text" name="user_name" maxlength="30" required placeholder="Ваше имя ..">
-                            <input type="tel" name="user_phone" title="Например: +37529xxxxxxx" required  placeholder="Ваш телефон .." pattern="^(\+375|80)(29|25|44|33|17|65)(\d{3})(\d{2})(\d{2})$">
-                            <textarea maxlength="100" name="user_question" cols="30" rows="10" placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
-                            <input type="submit">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <ul>
-                <li><a href="https://github.com/yaskutsWeb" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-                <li><a href="https://www.freecodecamp.org/kamaz_v8" target="_blank"><i class="fab fa-free-code-camp"></i>FreeCodeCamp</a></li>
-                <li><a href="https://vk.com/kaptowka228" target="_blank"><i class="fab fa-vk"></i>VK</a></li>
-                <li><a href="https://www.instagram.com/kamaz.v8/" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
-                <li><a href="https://t.me/pavelyaskuts" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></li>
-            </ul>
-        </div>
-    </footer>
+		<section class="contact" id="contact">
+			<div class="container">
+				<h2>Мои Контакты</h2>
+				<p>Для связи со мной вы можете использовать форму или связаться со мной через социальные сети внизу
+					сайта</p>
+				<div class="contact-content d-grid">
+					<div class="col-left">
+						<h3>Контактная информация</h3>
+						<address>
+							<p><i class="fa fa-home"></i>г.Минск, Ул. Голубева 19</p>
+							<p><i class="fa fa-envelope"></i><a
+									href="mailto:pavel.yaskuts@gmail.com">pavel.yaskuts@gmail.com</a></p>
+							<p><i class="fa fa-phone"></i><a href="tel:+375296039733">+375(29) 603-97-33</a></p>
+						</address>
+					</div>
+					<div class="col-right">
+						<form id="callbackForm">
+							<input type="text" name="user_name" maxlength="30" required placeholder="Ваше имя ..">
+							<input type="tel" name="user_phone" title="Например: +37529xxxxxxx" required
+								placeholder="Ваш телефон .."
+								pattern="^(\+375|80)(29|25|44|33|17|65)(\d{3})(\d{2})(\d{2})$">
+							<textarea maxlength="100" name="user_question" cols="30" rows="10"
+								placeholder="Ваш вопрос или запрос необходимой услуги"></textarea>
+							<input type="submit">
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="https://github.com/yaskutsWeb" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
+				<li><a href="https://www.freecodecamp.org/kamaz_v8" target="_blank"><i
+							class="fab fa-free-code-camp"></i>FreeCodeCamp</a></li>
+				<li><a href="https://vk.com/kaptowka228" target="_blank"><i class="fab fa-vk"></i>VK</a></li>
+				<li><a href="https://www.instagram.com/kamaz.v8/" target="_blank"><i
+							class="fab fa-instagram"></i>Instagram</a></li>
+				<li><a href="https://t.me/pavelyaskuts" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></li>
+			</ul>
+		</div>
+	</footer>
 
 
 
@@ -206,9 +221,9 @@
 
 
 	<script src="https://kit.fontawesome.com/a9c1882cb6.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/main.js"></script>
-    <script src="js/formHandler.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/formHandler.js"></script>
 </body>
+
 </html>
