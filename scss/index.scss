@@ -191,9 +191,9 @@ nav {
 /* section HOME _________________________________________________________________________________________*/
 .home {
 	.container {
-		// min-height: calc(100vh - 82px);
+		min-height: calc(100vh - 82px);
 		align-items: center;
-		height: 100vh; // было проценты
+		height: 1px;// было проценты
 		padding-top: 82px;
 	}
 
@@ -345,7 +345,7 @@ nav {
 		h4 {
 			font-size: 28px;
 			color: $text-third-color;
-			font-weight: 600;
+			font-weight: 500;
 			margin-top: 15px;
 			font-family: "Comfortaa", Helvetica, Arial, sans-serif;
 			margin-bottom: 20px;
@@ -504,8 +504,8 @@ nav {
 	justify-content: center;
 	transition: all .4s ease-in-out;
 
-	i {
-		font-size: 35px;
+	.service-icon__element{
+		font-size: 24px;
 		color: $text-main-color;
 		padding: 0;
 	}
@@ -567,9 +567,15 @@ nav {
 	}
 
 	p {
-		i {
+		.icon {
 			margin-right: 20px;
 			font-size: 22px;
+		}
+		a{
+			&:hover{
+				cursor: pointer;
+				color: $text-main-color;
+			}
 		}
 	}
 
@@ -648,11 +654,12 @@ footer {
 					cursor: pointer;
 					color: $text-main-color;
 				}
+
 			}
 		}
 	}
 
-	i {
+	.icon {
 		margin-right: 5px;
 	}
 
