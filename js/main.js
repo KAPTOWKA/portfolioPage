@@ -15,13 +15,16 @@ $(document).ready(function () {
 
 // show navigation bar
 $(".burger").on("click", function (event) {
+	$(".burger__element").toggleClass("burger__element--active");
     $("nav ul").slideToggle("200");
 });
 
 // hide navigation bar when the choise is made
 $("nav ul a").on("click", function () {
-    if(	$(window).width()<960)
-    $("nav ul").slideToggle("200");
+	if ($(window).width() < 960) {
+		$(".burger__element").toggleClass("burger__element--active");
+		$("nav ul").slideToggle("200");
+	}
 });
 
 // highlighting the active view of the menu when scrolling
