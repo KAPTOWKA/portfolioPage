@@ -26,9 +26,9 @@ $message .= "%0D%0AТелефон пользователя:  ".$phone;
 $message .= "%0D%0AСообщение пользователя:  ".$question;
 
 /*токен который выдаётся при регистрации бота */
-$token = "1843276190:AAGqa-QUATNP5DXPjgbruGifMnTP0oZNrX0";
+$token = "1900326373:AAGTqrX5GYWONNaYWDbtZJ5ECGFj3RVZkME";
 /*идентификатор группы*/
-$chat_id = "301082450";
+$chat_id = "-593761598";
 /*делаем запрос и отправляем сообщение*/
 parser("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$message}");
 ?>
