@@ -214,11 +214,11 @@ nav ul li a:hover, nav ul li a.active {
 /* MAIN */
 /* section HOME _________________________________________________________________________________________*/
 .home .container {
-  min-height: calc(100vh - 82px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 1px;
+  min-height: 100vh;
+  height: auto;
   padding-top: 82px;
 }
 
@@ -255,7 +255,7 @@ nav ul li a:hover, nav ul li a.active {
 
 /* section ABOUTME _________________________________________________________________________________________*/
 .aboutme {
-  padding-top: 100px;
+  margin-top: 100px;
   height: auto;
 }
 
@@ -822,7 +822,6 @@ footer a:visited {
   }
   .home .container {
     text-align: center;
-    height: 100vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
