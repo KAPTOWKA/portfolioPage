@@ -60,17 +60,17 @@ section.each(function () {
 
 // slideri i vsya huyna
 document.querySelector(".desc-container").addEventListener("click", (event) => {
-	console.log("hello");
 	if (event.target.closest(".description-close-button")) {
 		console.log("hellosss");
 		let item = event.target.closest(".portfolio-description");
-		$(item).slideUp("slow");
-	}
-	else {
-		console.log("suclk");
+		$(item).slideUp("slow", () => {
+			$("html, body").animate({
+				scrollTop: $(".container h2").offset().top - 100
+			}, "fast");
+		});
+		productID = null;
 	}
 });
-
 
 
 document.querySelector(".portfolio-items").addEventListener("click", (event) => {
@@ -79,14 +79,17 @@ document.querySelector(".portfolio-items").addEventListener("click", (event) => 
 
 	let itemId = item.dataset.productId;
 	if (productID === itemId) return;
-
+	productID = itemId;
 	let itemsDescription = document.querySelectorAll(".portfolio-description");
 	itemsDescription.forEach((currentDescItem) => {
 		if (currentDescItem.dataset.descriptionId == itemId) {
+
+			$(currentDescItem).css("display", "flex").show();
 			let offset = $(currentDescItem).offset();
-			$(currentDescItem).css("display", "flex").animate({
-				scrollTop: offset.top
-			}).show();
+
+			$("html, body").animate({
+				scrollTop: offset.top - 100
+			}, "fast");
 		}
 		else {
 			$(currentDescItem).hide();
