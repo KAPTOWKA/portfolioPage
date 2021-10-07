@@ -405,6 +405,10 @@ nav ul li a:hover, nav ul li a.active {
   display: block;
 }
 
+.portfolio-items .item .container-image img:hover {
+  cursor: pointer;
+}
+
 .portfolio-items .item .container-image .decription {
   top: 0;
   bottom: 0;
@@ -542,6 +546,10 @@ nav ul li a:hover, nav ul li a.active {
 
 .portfolio-description .buttons-container a:last-child {
   margin-right: 0;
+}
+
+.portfolio-description--hidden {
+  display: none;
 }
 
 .description-close-button {

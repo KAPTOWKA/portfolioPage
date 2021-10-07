@@ -403,6 +403,9 @@ nav {
 
 			img {
 				display: block;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 
 			.decription {
@@ -530,6 +533,9 @@ nav {
 			}
 		}
 	}
+}
+.portfolio-description--hidden{
+	display: none;
 }
 .description-close-button{
 	position: absolute;

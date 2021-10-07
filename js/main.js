@@ -1,3 +1,5 @@
+let productID = null;
+
 // change navigation div when scrolling
 $(document).ready(function () {
     $(window).bind("scroll", function() {
@@ -49,4 +51,45 @@ section.each(function () {
         nav.find('a[href="#' + $(this).attr('class') + '"]').addClass('active');
     }
     });
+});
+
+
+
+
+
+
+// slideri i vsya huyna
+document.querySelector(".desc-container").addEventListener("click", (event) => {
+	console.log("hello");
+	if (event.target.closest(".description-close-button")) {
+		console.log("hellosss");
+		let item = event.target.closest(".portfolio-description");
+		$(item).slideUp("slow");
+	}
+	else {
+		console.log("suclk");
+	}
+});
+
+
+
+document.querySelector(".portfolio-items").addEventListener("click", (event) => {
+	let item = event.target.closest(".item");
+	if (!item) return;
+
+	let itemId = item.dataset.productId;
+	if (productID === itemId) return;
+
+	let itemsDescription = document.querySelectorAll(".portfolio-description");
+	itemsDescription.forEach((currentDescItem) => {
+		if (currentDescItem.dataset.descriptionId == itemId) {
+			let offset = $(currentDescItem).offset();
+			$(currentDescItem).css("display", "flex").animate({
+				scrollTop: offset.top
+			}).show();
+		}
+		else {
+			$(currentDescItem).hide();
+		}
+	})
 });
