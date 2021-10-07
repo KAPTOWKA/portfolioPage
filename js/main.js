@@ -66,7 +66,7 @@ document.querySelector(".desc-container").addEventListener("click", (event) => {
 		$(item).slideUp("slow", () => {
 			$("html, body").animate({
 				scrollTop: $(".container h2").offset().top - 100
-			}, "fast");
+			}, "slow");
 		});
 		productID = null;
 	}
@@ -89,10 +89,36 @@ document.querySelector(".portfolio-items").addEventListener("click", (event) => 
 
 			$("html, body").animate({
 				scrollTop: offset.top - 100
-			}, "fast");
+			}, "slow");
 		}
 		else {
 			$(currentDescItem).hide();
 		}
 	})
 });
+
+
+document.querySelectorAll(".slide img").forEach((element) => {
+	element.addEventListener("click", (event) => {
+		let imageContainer = event.target.closest(".potfolio-description__image-container");
+		imageContainer.classList.add("potfolio-description__image-container--popup");
+		document.querySelector("body").classList.add("body--locked");
+
+
+		const closeThis = (event) => {
+			if (event.target.closest(".potfolio-description__image-container") && !event.target.closest(".popup-close")) {
+				return;
+			}
+			imageContainer.classList.remove("potfolio-description__image-container--popup");
+
+
+			document.querySelector("body").classList.remove("body--locked");
+			document.querySelector("body").removeEventListener("click", closeThis);
+		}
+
+		document.querySelector("body").addEventListener("click", closeThis);
+
+		event.stopPropagation();
+	});
+
+})

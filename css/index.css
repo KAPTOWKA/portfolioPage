@@ -12,6 +12,24 @@ body {
   line-height: 1.75;
 }
 
+.body--locked {
+  overflow: hidden;
+}
+
+.body--locked::after {
+  content: "";
+  z-index: 500;
+  background-color: #000;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  display: block;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -583,6 +601,49 @@ nav ul li a:hover, nav ul li a.active {
 
 .slide img {
   width: 255px;
+  cursor: pointer;
+}
+
+.popup-close {
+  display: none;
+}
+
+.potfolio-description__image-container--popup {
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.potfolio-description__image-container--popup img {
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+          box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+}
+
+.potfolio-description__image-container--popup .prev,
+.potfolio-description__image-container--popup .next {
+  padding: 16px;
+  font-size: 24px;
+}
+
+.potfolio-description__image-container--popup .popup-close {
+  display: block;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  background-color: inherit;
+  color: #fff;
+  font-size: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.potfolio-description__image-container--popup img {
+  width: 100%;
 }
 
 .prev,
@@ -654,6 +715,10 @@ nav ul li a:hover, nav ul li a.active {
 
 .demo {
   opacity: 0.6;
+}
+
+.demo--active {
+  opacity: 1;
 }
 
 .demo:hover {
@@ -1021,6 +1086,15 @@ footer a:visited {
 }
 
 @media (max-width: 768px) {
+  .body--locked {
+    overflow: auto;
+  }
+  .body--locked::after {
+    content: "";
+    z-index: 100;
+    background-color: inherit;
+    opacity: 0;
+  }
   .d-grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
