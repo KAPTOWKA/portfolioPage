@@ -459,6 +459,169 @@ nav {
 	}
 }
 
+.portfolio-description{
+	display: flex;
+	position: relative;
+	padding: 50px 50px 30px 50px;
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	margin-top: 40px;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	.potfolio-description__content-container{
+		padding-left: 35px;
+		p{
+			max-width: 420px;
+			width: 100%;
+			padding: 0;
+			margin: 0 auto;
+			margin-top: 0;
+			text-align: left;
+		}
+		h4 {
+			font-size: 25px;
+			color: $text-third-color;
+			font-weight: 600;
+			font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			margin-bottom: 10px;
+		}
+		h5{
+			font-size: 20px;
+			color: $text-third-color;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+			text-align: left;
+			font-weight: 600;
+		}
+	}
+	span {
+		color: $text-main-color;
+		opacity: 0;
+		transition: all .4s ease-in-out;
+	}
+
+	&:hover {
+		span {
+			opacity: 1;
+		}
+	}
+	.buttons-container{
+		text-align: left;
+		margin-top: 20px;
+		width: 100%;
+		box-sizing: border-box;
+		display: flex;
+		a{
+			display: inline-block;
+			text-align: center;
+			width: 50%;
+			border-radius: 0;
+			font-size: 14px;
+			padding: 10px 0;
+			margin-right: 15px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+}
+.description-close-button{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px;
+	background-color: #fff;
+	border: 0;
+	cursor: pointer;
+	color: $background-secondary-color;
+}
+.description-close-button:hover{
+	color: $text-main-color;
+}
+.potfolio-description__image-container{
+	position: relative;
+	width: 255px;
+}
+.slide{
+	display: none;
+	position: relative;
+}
+.slide--active{
+	display: block;
+}
+
+.slide img{
+	width: 255px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+  width: auto;
+  margin: auto;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+.prev{
+	left: 0;
+}
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .number-text {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+
+.img-desc{
+	width: 100%;
+	display: block;
+}
+
+.row{
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.column{
+	width: 32%;
+}
+.column img{
+	display: block;
+}
+.demo{
+	opacity: 0.6;
+}
+.demo:hover{
+	opacity: 1;
+	cursor: pointer;
+}
 /* section services _________________________________________________________________________________________*/
 .services {
 	padding-top: 100px;
