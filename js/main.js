@@ -61,7 +61,6 @@ section.each(function () {
 // slideri i vsya huyna
 document.querySelector(".desc-container").addEventListener("click", (event) => {
 	if (event.target.closest(".description-close-button")) {
-		console.log("hellosss");
 		let item = event.target.closest(".portfolio-description");
 		$(item).slideUp("slow", () => {
 			$("html, body").animate({
@@ -122,3 +121,69 @@ document.querySelectorAll(".slide img").forEach((element) => {
 	});
 
 })
+
+
+
+// точно слайдер
+
+document.addEventListener("DOMContentLoaded", () => {
+	const descriptionContainers = document.querySelectorAll(".potfolio-description__image-container");
+
+	descriptionContainers.forEach(container => {
+		new SliderController(container);
+	})
+});
+
+
+class SliderController{
+	constructor(containerSelector) {
+		this.slidesCollection = containerSelector.querySelectorAll(".slide");
+		this.demoCollection = containerSelector.querySelectorAll(".demo");
+		this.slidesCollection.forEach(slide => {
+			slide.querySelector(".prev").addEventListener("click", () => { this.changeSlide(-1) });
+			slide.querySelector(".next").addEventListener("click", () => { this.changeSlide(1) });
+		})
+
+		this.demoCollection.forEach(demo => {
+			demo.addEventListener("click", () => {
+				this.setSlide(+demo.dataset.imgId);
+			});
+		})
+		this.slideIndex = 1;
+		this.showSlides(this.slideIndex);
+	}
+
+	changeSlide(index) {
+		this.showSlides(this.slideIndex += index);
+	}
+
+	setSlide(index) {
+		this.showSlides(this.slideIndex = index);
+	}
+
+	showSlides(index) {
+
+
+		if (index > this.slidesCollection.length) {
+			this.slideIndex = 1;
+		}
+		if (index <= 0) {
+			this.slideIndex = this.slidesCollection.length;
+		}
+
+		this.slidesCollection.forEach(slide => {
+			slide.classList.remove("slide--active");
+			if (slide.dataset.slideId == this.slideIndex) {
+				slide.classList.add("slide--active");
+			}
+		});
+
+		this.demoCollection.forEach(demo => {
+			demo.classList.remove("demo--active");
+			if (demo.dataset.imgId == this.slideIndex) {
+				demo.classList.add("demo--active");
+			}
+		})
+
+	}
+}
