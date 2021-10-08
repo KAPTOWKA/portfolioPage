@@ -197,12 +197,5 @@ document.querySelectorAll(".button-same").forEach(link => {
 		const callBackForm = document.querySelector("#callbackForm");
 
 		callBackForm["user_question"].value = link.getAttribute("value");
-
-		callBackForm["user_name"].focus();
-
-		let offset = $(".contact .container h2").offset();
-		$("html, body").animate({
-			scrollTop: offset.top - 100
-		}, "fast");
 	});
 })
