@@ -428,6 +428,8 @@ nav {
 				}
 			}
 
+
+
 			.decription {
 				top: 0;
 				bottom: 0;
@@ -584,6 +586,10 @@ nav {
 .potfolio-description__image-container {
 	position: relative;
 	width: 255px;
+
+	.img-desc{
+		cursor: zoom-in;
+}
 }
 
 .slide {
@@ -618,6 +624,9 @@ nav {
 		width: 100%;
 	}
 
+	.img-desc{
+		cursor: pointer;
+}
 	.prev,
 	.next {
 		padding: 16px;
@@ -631,7 +640,7 @@ nav {
 		top: 0;
 		background-color: inherit;
 		color: #fff;
-		font-size: 30px;
+		font-size: 24px;
 		border: 0;
 		outline: 0;
 		cursor: pointer;
@@ -893,6 +902,32 @@ nav {
 	}
 }
 
+.swal-title{
+	font-family: "Roboto" ,sans-serif !important;
+	color: #000;
+}
+.swal-text{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	color: $background-secondary-color;
+	line-height: normal;
+}
+.swal-footer{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+.swal-button{
+	background-color: $background-secondary-color;
+	outline: 0;
+	border: 0;
+}
+.swal-button:hover{
+	background-color: $text-main-color !important;
+}
+.swal-button:focus {
+	box-shadow: none;
+  }
 .contact-content {
 	margin-top: 60px;
 	width: 100%;

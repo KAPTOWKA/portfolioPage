@@ -1,3 +1,4 @@
+
 $("#callbackForm").on('submit', function (e) {
 
     e.preventDefault();
@@ -7,11 +8,22 @@ $("#callbackForm").on('submit', function (e) {
       url: "form.php",
       data: $("#callbackForm").serialize(),
         success: function () {
-            alert("Заявка успешно отправлена");
-            $('#callbackForm')[0].reset();
+			$('#callbackForm')[0].reset();
+			swal({
+				title: "Успешная отправка",
+				text: "Спасибо, ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время",
+				icon: "success",
+				button: "ОК",
+				timer: 3000
+			  });
         },
         error: function () {
-            alert("Ошибка отправки формы, пожалуйста, попробуйте еще раз");
+			swal({
+				title: "Ошибка",
+				text: "К сожалению, при отправке сообщения возникли проблемы. Пожалуйста, воспользуйтесь одним из контактов для связи с нами",
+				icon: "error",
+				button: "ОК",
+			  });
       }
     });
 });

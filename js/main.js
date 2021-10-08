@@ -62,10 +62,10 @@ section.each(function () {
 document.querySelector(".desc-container").addEventListener("click", (event) => {
 	if (event.target.closest(".description-close-button")) {
 		let item = event.target.closest(".portfolio-description");
-		$(item).slideUp("slow", () => {
+		$(item).slideUp("fast", () => {
 			$("html, body").animate({
 				scrollTop: $(".container h2").offset().top - 100
-			}, "slow");
+			}, "fast");
 		});
 		productID = null;
 	}
@@ -86,9 +86,10 @@ document.querySelector(".portfolio-items").addEventListener("click", (event) => 
 			$(currentDescItem).css("display", "flex").show();
 			let offset = $(currentDescItem).offset();
 
+
 			$("html, body").animate({
 				scrollTop: offset.top - 100
-			}, "slow");
+			}, "fast");
 		}
 		else {
 			$(currentDescItem).hide();
@@ -187,3 +188,21 @@ class SliderController{
 
 	}
 }
+
+// knopka like this
+
+document.querySelectorAll(".button-same").forEach(link => {
+	link.addEventListener("click", (event) => {
+
+		const callBackForm = document.querySelector("#callbackForm");
+
+		callBackForm["user_question"].value = link.getAttribute("value");
+
+		callBackForm["user_name"].focus();
+
+		let offset = $(".contact .container h2").offset();
+		$("html, body").animate({
+			scrollTop: offset.top - 100
+		}, "fast");
+	});
+})

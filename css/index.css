@@ -590,6 +590,11 @@ nav ul li a:hover, nav ul li a.active {
   width: 255px;
 }
 
+.potfolio-description__image-container .img-desc {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
 .slide {
   display: none;
   position: relative;
@@ -624,6 +629,10 @@ nav ul li a:hover, nav ul li a.active {
   width: 100%;
 }
 
+.potfolio-description__image-container--popup .img-desc {
+  cursor: pointer;
+}
+
 .potfolio-description__image-container--popup .prev,
 .potfolio-description__image-container--popup .next {
   padding: 16px;
@@ -637,7 +646,7 @@ nav ul li a:hover, nav ul li a.active {
   top: 0;
   background-color: inherit;
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   border: 0;
   outline: 0;
   cursor: pointer;
@@ -904,6 +913,39 @@ nav ul li a:hover, nav ul li a.active {
 
 .contact input[type="submit"]:hover {
   background-color: deepskyblue;
+}
+
+.swal-title {
+  font-family: "Roboto" ,sans-serif !important;
+  color: #000;
+}
+
+.swal-text {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #262626;
+  line-height: normal;
+}
+
+.swal-footer {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.swal-button {
+  background-color: #262626;
+  outline: 0;
+  border: 0;
+}
+
+.swal-button:hover {
+  background-color: deepskyblue !important;
+}
+
+.swal-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contact-content {
